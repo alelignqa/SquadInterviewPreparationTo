@@ -17,7 +17,6 @@ public class Fiz {
             System.out.println(x + " is the max.");
         } else if (y > x) {
             System.out.println(y + " is the max.");
-
         } else {
             System.out.println("Neither");
 
