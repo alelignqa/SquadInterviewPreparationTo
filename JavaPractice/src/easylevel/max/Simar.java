@@ -16,14 +16,16 @@ public class Simar {
         int b = 25;
 
 
-        if (a<b){
+        if (a>b){
 
-            System.out.println(a +"is the max number");
+            System.out.println(a +" is the max number");
         }
-        else if (b<a){
-            System.out.println(b+ "is the max number");
+        else if (b>a){
+            System.out.println(b+ " is the max number");
         }
     }
+
+
 
 
 
