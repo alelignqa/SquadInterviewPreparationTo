@@ -3,7 +3,7 @@ package easylevel.oddoreven;
 public class Reto {
 
     public static void main(String[] args) {
-        Reto.oddOrEven(90);
+        Reto.oddOrEven(91);
 //        Reto.oddOrEven1(90, 77);
     }
 
