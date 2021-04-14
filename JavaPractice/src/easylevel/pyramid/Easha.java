@@ -14,7 +14,7 @@ public class Easha {
 //         int k;
 //
 //         for(i = 0; i < j; i++){
-//             for(k = 0; k < i ; k++){
+//             for(k = 0; k <= i ; k++){
 //                 System.out.print("* ");
 //             }
 //             System.out.println("");
@@ -26,11 +26,23 @@ public class Easha {
 
 
         for(i = 0; i < 5; i ++){
-            for( j = 0 ; j < 5 -i; j ++){
+            for( j = 0 ; j <= 5 -i; j ++){// creates space
                 System.out.print(" ");
             }
-            for(k = 0; k <= i; k ++){
-                System.out.print(" *");
+            for(k = 0; k <= i; k ++){// creates stars
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+
+        //inverted
+
+        for(i = 5; i >= 0; i --){
+            for(j = 5; j >= i; j--){
+                System.out.print(" ");
+            }
+            for(k =0; k <= i; k++){
+                System.out.print("* ");
             }
             System.out.println();
         }

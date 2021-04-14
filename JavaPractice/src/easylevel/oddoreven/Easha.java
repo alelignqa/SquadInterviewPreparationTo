@@ -15,7 +15,7 @@ public class Easha {
 //        int userNum = num.nextInt();
 //        Boolean
 //
-//        if (userNum % 2==0){
+//        if (userNum % 2){
 //            System.out.println("Its even");
 //        }else{
 //            System.out.println("Its odd");

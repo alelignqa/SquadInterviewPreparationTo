@@ -6,9 +6,10 @@ public class Easha {
     public static void main(String args[]){
         Easha.findRemainder();
     }
+
     public static void findRemainder(){
-        int i = 200;
-        int j = 2000;
+        int i = 10;
+        int j = 20;
         int remainder = i % j;
         System.out.println(remainder);
     }
