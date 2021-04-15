@@ -32,6 +32,8 @@ public class Easha {
             System.out.println("Its odd");
         }
 
+        num.close();
+
 
     }
 }
