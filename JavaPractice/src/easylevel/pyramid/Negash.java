@@ -3,7 +3,7 @@ package easylevel.pyramid;
 public class Negash {
 
     public static void main(String[] args) {
-//        Negash.myTrial(6);
+        Negash.myTrial(6);
         Negash.fullPyramid(10);
 
     }
@@ -30,6 +30,17 @@ public class Negash {
                 System.out.print(" ");
             }
             for (int n = 0; n <= i; n++) {
+                System.out.print(" *");
+            }
+            System.out.println();
+        }
+
+        for (int i = 0; i <= howTall; i++) {
+
+            for (int n = 0; n <= i; n++) {
+                System.out.print(" ");
+            }
+            for (int j = howTall; j >= i; j--) {
                 System.out.print(" *");
             }
             System.out.println();
