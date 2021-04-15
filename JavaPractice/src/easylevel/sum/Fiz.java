@@ -14,7 +14,7 @@ public class Fiz {
         System.out.println("Enter Second Number: ");
         num2 = scan.nextInt();
 
-        scan.close();
+
         sum = num1 + num2;
         System.out.println("Sum of these numbers: "+sum);
     }
