@@ -3,8 +3,7 @@ package easylevel.remainder;
 public class Negash {
 
     public static void main(String[] args) {
-//        Negash.remainder(10,7);
-
+        Negash.remainder(10,20);
 
     }
 

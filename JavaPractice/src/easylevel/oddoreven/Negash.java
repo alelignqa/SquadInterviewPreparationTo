@@ -6,8 +6,8 @@ public class Negash {
 
     public static void main(String[] args) {
 //
-//        Negash.evenOrOdd(21);
 //        Negash.evenOrOdd(22);
+//        Negash.evenOrOdd(2);
         Negash.evenOrOdd();
 
     }
