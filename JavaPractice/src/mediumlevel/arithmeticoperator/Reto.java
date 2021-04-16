@@ -27,8 +27,8 @@ public class Reto {
         System.out.println("Multiplying two numbers: "+multiplication);
 
         try {
-            //int division = input1/input2; //try catch works here when dividing by 0
-            double division = (double) input1/input2; // this says infinity when dividing by 0;
+            int division = input1/input2; //try catch works here when dividing by 0
+            //double division = (double) input1/input2; // this says infinity when dividing by 0;
             System.out.println("Dividing two numbers: "+division);
         }catch (Exception exception){
             System.out.println("Please do not include 0 for the second input");
