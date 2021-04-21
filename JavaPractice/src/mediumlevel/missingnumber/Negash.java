@@ -23,6 +23,9 @@ public class Negash {
      */
     public static void main(String[] args) {
         findMissing(Negash.array,10);
+        int expectedSum = 10 * (10 + 1)/2;
+        System.out.println(expectedSum);
+        System.out.println(findSumOfArrayElements(Negash.array));
     }
 
     public static int findSumOfArrayElements(int[] arrayName){
@@ -34,7 +37,7 @@ public class Negash {
     }
 
     public static void findMissing(int[] arrayName,int biggestNum){
-
+        // 1,2,3,...., n => n*(n+1)/2  1,2,3,4 = array length  55
         int expectedSum = biggestNum * (biggestNum + 1)/2; // if all elements are preset 1+2+3+...+biggestNum
         int actualSum = findSumOfArrayElements(arrayName); // sum of actually avail in the array
         int missingNum = expectedSum - actualSum;
