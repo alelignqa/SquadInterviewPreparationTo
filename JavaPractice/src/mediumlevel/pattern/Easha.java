@@ -9,12 +9,12 @@ public class Easha {
          *
          */
 
-        Easha.pattern();
+        Easha.pattern(100);
     }
 
-    public static int  pattern(){
+    public static int  pattern(int myNum){
         int i = 0;
-        for( i = 100; i >= 0; i--){// since the pattern starts at 100 and counts down, we will initialize at 100
+        for( i = myNum; i >= 0; i--){// since the pattern starts at 100 and counts down, we will initialize at 100
             System.out.print(i+",");// to seperate each number with a comma as it prints
             if(i <=90){// if i is less than or equal to 90 decrease i
                 i--;

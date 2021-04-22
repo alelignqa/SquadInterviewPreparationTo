@@ -18,7 +18,7 @@ public class Easha {
 
         int factorial=myFactor; // to pass number you want to set as factorials of
 
-        for(int i = factorial; i > 1; i--){//2
+        for(int i = factorial; i > 1; i--){//5
             factorial *= i-1; // you want to multiple your number by the i -1 to get the number preceding i
             // 4*5 = 20; 3*20 = 60; 3*60 = 120; 1*120 = 120;
 
