@@ -28,7 +28,7 @@ public class Negash {
 
     public static void grading(int scoreQuiz,int scoreMidTerm,int scoreFinal){
 
-        int grade = (int) (scoreQuiz + scoreMidTerm + scoreFinal)/3;
+        int grade = (int) (scoreQuiz + scoreMidTerm + scoreFinal)/3;// since it is asking for average
 
         if(grade >= 90){
             System.out.println("Your grade is A.");

@@ -7,7 +7,9 @@ public class Negash {
      *
      */
     public static void main(String[] args) {
-        Negash.factorial(5);
+//        Negash.factorial(5);
+        System.out.println(Negash.factorial1(5));
+
     }
 
     public static void factorial(int num){
@@ -18,5 +20,14 @@ public class Negash {
         }
         System.out.println(factorial);
     }
+
+    public static int factorial1(int num){
+        if (num == 1){
+            return 1;
+        }else {
+          return  num * factorial1(num-1);
+        }
+    }
+
 
 }
