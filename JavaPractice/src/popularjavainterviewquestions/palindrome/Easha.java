@@ -7,7 +7,7 @@ public class Easha {
     //Ex: mom, dad, poop, race car, nurses run
 
     public static void main(String[] args) {
-        String word = "nurses run";
+        String word = "race car";
         word = word.replace(" ", ""); // since strings are immutable we must store this in a string
         Easha.checkPalindrome(word);
 
@@ -28,7 +28,9 @@ public class Easha {
             reverse += word.charAt(i);
         }
 
-        System.out.println("\033[0;1m" +reverse);
+        System.out.println("\033[0;1m" +reverse);// just to make sure it did reverse
+
+        //end of 10 min
 
 
         //now to compare to original string

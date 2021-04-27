@@ -19,13 +19,12 @@ public class Easha {
 
     public static void reverseString(String name) {
 
-
         String reverse = "";
 
-        for (int i = name.length() - 1; i >= 0; i--) { // i will be length of string -1 so it will go to the end i = 4
-            reverse = reverse + name.charAt(i);// b will be holding our value at i each time so right now at 4 it is
-            // 'a'
-            //it will continue to hold it inside b until length is done
+        for (int i = name.length()-1; i >= 0; i--) { // i will be length of string -1 so it will go to the end i = 4
+            reverse += name.charAt(i);// b will be holding our value at i each time so right now at 4 it is
+            // 'i'
+            //it will continue to hold it inside reverse until length is done
         }
         System.out.println(reverse);
 
