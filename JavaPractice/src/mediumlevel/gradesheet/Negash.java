@@ -1,5 +1,7 @@
 package mediumlevel.gradesheet;
 
+import java.util.Scanner;
+
 public class Negash {
         /*
     Write a Java program that determines a student’s grade.
@@ -19,11 +21,11 @@ public class Negash {
          */
 
     public static void main(String[] args) {
-    Negash.grading(90,90,90);
-    Negash.grading(80,68,90);
-    Negash.grading(70,68,70);
-    Negash.grading(50,49,50);
-
+//    Negash.grading(90,90,90);
+//    Negash.grading(80,68,90);
+//    Negash.grading(70,68,70);
+//    Negash.grading(50,49,50);
+    Negash.grading();
     }
 
     public static void grading(int scoreQuiz,int scoreMidTerm,int scoreFinal){
@@ -40,4 +42,26 @@ public class Negash {
             System.out.println("Your grade is D.");
         }
     }
+
+    public static void grading(){
+        int scoreQuiz,scoreMidTerm,scoreFinal;
+        Scanner input = new Scanner(System.in);
+        System.out.println("Please enter the scores : Quiz, Mid-term and Final in the same order");
+        scoreQuiz = input.nextInt();
+        scoreMidTerm = input.nextInt();
+        scoreFinal = input.nextInt();
+        int grade = (int) (scoreQuiz + scoreMidTerm + scoreFinal)/3;// since it is asking for average
+
+        if(grade >= 90){
+            System.out.println("Your grade is A.");
+        }else if (grade >=70 && grade < 90){
+            System.out.println("Your grade is B.");
+        }else if (grade >=50 && grade < 70){
+            System.out.println("Your grade is C.");
+        }else if (grade < 50){
+            System.out.println("Your grade is D.");
+        }
+    }
+
+
 }

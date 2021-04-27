@@ -10,8 +10,9 @@ public class Negash {
 
     public static void main(String[] args) {
 //        Negash.fibonacci(40);
-        Negash.fiboRecursion(40);
+//        Negash.fiboRecursion(40);
 //        Negash.printFibo(40);
+        Negash.fiboEasha(40);
     }
 
     public static void fibonacci(int num) {
@@ -22,7 +23,7 @@ public class Negash {
 
         for (int i = 0; i <= num; i++) {
             fibonacci.add(sum);
-            System.out.print(sum+",");
+            System.out.print(sum + ",");
             first = second;
             second = sum;
             sum = first + second;
@@ -30,14 +31,15 @@ public class Negash {
         System.out.println(fibonacci);
     }
 
-    static int first = 0, second = 1, sum=0;
+    static int first = 0, second = 1, sum = 0;
+
     public static void fiboRecursion(int count) {
 
         if (count > 0) {
             sum = first + second;
             first = second;
             second = sum;
-            System.out.print(sum+",");
+            System.out.print(sum + ",");
             fiboRecursion(count - 1);
         }
     }
@@ -55,9 +57,31 @@ public class Negash {
             ad.add(n3);
             printFibo(count - 1);
         } // need to declare the variables outside and n1 and n2 needs to be printed separately
-        for (Integer fib: ad){
-            System.out.print(fib+",");
+        for (Integer fib : ad) {
+            System.out.print(fib + ",");
         }
     }
+
+    public static void fiboEasha(int num) { // missing the first 0
+        int j = 0;
+        int k = 1;
+        int n = 0;
+//        for (int i = 0; i <= 40; i++) {
+//            System.out.println(k + ",");
+//            n = j + k;//0+1 = 1
+//            j = k;//1
+//            k = n;//1
+//        }
+        for (int i = 0; i <= num; i++) {
+            System.out.print(n + ",");
+            j = k;//1
+            k = n;//1
+            n = j + k;//0+1 = 1
+
+
+        }
+
+    }
+
 }
 // [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946, 17711, 28657, 46368, 75025, 121393, 196418, 317811, 514229, 832040, 1346269, 2178309, 3524578, 5702887, 9227465, 14930352, 24157817, 39088169, 63245986, 102334155]
