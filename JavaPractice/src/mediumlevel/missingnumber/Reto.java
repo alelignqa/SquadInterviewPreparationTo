@@ -21,7 +21,7 @@ public class Reto {
         int n = array1.length + 1;
         int sum = (n * (n + 1)) / 2; // formula for sum of  n numbers -->55
         for (int i = 0; i < array1.length; i++) {
-            //we have the sum of n numbers, no we have to subtract each element
+            //we have the sum of n numbers, now we have to subtract each element
             //of the array from the sum of our array
             //example our array has 1,2,4 --> sum = (4*(4+1))/2 = 10 --> 4 because we r missing 3 so total we shoudl have 4 elements
             //so to get the missing num, we have to subtract each index in our array from the sum to get the missing number
