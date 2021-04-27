@@ -247,7 +247,7 @@ public class ConnectToSqlDB {
                 String dob = rs.getString("stDOB");
                 //System.out.format("%s, %s\n", name, id);
                 user = new User(name, id, dob);
-                list.add(user);
+//                list.add(user);
             }
             st.close();
         } catch (Exception e) {
