@@ -25,13 +25,15 @@ public class Easha {
 
         //to check each word in the array
         for(String word: words){
-            // if word is present:
+            // if word is present add 1 to that count:
             if(wordCount.containsKey(word)){
                 wordCount.put(word.toLowerCase(), wordCount.get(word)+1);
-            }else{
+            }else{//otherwise just add 1
                 wordCount.put(word,1);
             }
         }
+
+
         //extracting all keys of map - wordCount
         Set<String>wordsInString = wordCount.keySet(); //keySet will return set
 
