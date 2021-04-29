@@ -28,7 +28,7 @@ public class Easha {
 
         a = a + b;
         b = a - b;
-        a = a - b;
+        a = b;
         System.out.println("a " + a + " b "+ b);
 
     }

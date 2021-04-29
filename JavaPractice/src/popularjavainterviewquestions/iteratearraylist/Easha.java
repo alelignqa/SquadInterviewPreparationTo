@@ -8,8 +8,9 @@ public class Easha {
 
     public static void main(String[] args) {
 
-        Easha.arraylistIterateUsingForEach();
-        Easha.arraylistIterateUsingForLoop();
+//        Easha.arraylistIterateUsingForEach();
+//        Easha.arraylistIterateUsingForLoop();
+        Easha.arrayListIterateUsingWhileLoop();
     }
 
     //for each
@@ -52,8 +53,30 @@ public class Easha {
         int myindex =0;
         while(friends.size() > myindex){
             System.out.println(friends.get(myindex));
-
+                myindex++;
         }
+    }
+
+    public static void practice(){
+        ArrayList<String> mylist = new ArrayList<>();
+        mylist.add("Pineapple");
+        mylist.add("Apple");
+        mylist.add("Gorilla");
+        mylist.add("Monkey");
+
+        int index = 0;
+        while(mylist.size() > index){
+            System.out.println(mylist.get(index));
+            index++;
+        }
+
+//        for(String list: mylist){
+//            System.out.println(list);
+//        }
+//
+//        for(int i = 0; i < mylist.size(); i++ ){
+//            System.out.println(mylist.get(i));
+//        }
     }
 }
 
