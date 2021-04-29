@@ -54,7 +54,6 @@ public class Easha {
         return word;
 
     }
-
     public static void anotherWay(String word){
         String reverse = "";
         for(int i = word.length()-1; i >= 0; i --){
