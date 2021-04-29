@@ -50,7 +50,7 @@ public class Easha {
 
 
         int myindex =0;
-        while(friends.size() > 0){
+        while(friends.size() > myindex){
             System.out.println(friends.get(myindex));
 
         }

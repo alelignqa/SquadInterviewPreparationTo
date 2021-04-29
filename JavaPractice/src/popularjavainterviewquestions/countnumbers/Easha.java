@@ -2,6 +2,7 @@ package popularjavainterviewquestions.countnumbers;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
 import java.util.Set;
 
 public class Easha {
@@ -15,33 +16,40 @@ public class Easha {
     }
 
     public static void findCountInString(){
-        String inputString = "Hey, java is the worst language of all time today so is it java so so no";
-
-        //split
-        String words[] = inputString.split(" ");
-
         //create hashmap
         Map<String, Integer> wordCount = new HashMap<String, Integer>();
 
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Please type a sentence: ");
+
+        String word = scan.nextLine();
+
+        //split
+        String words[] = word.split(" ");
+
+
+
         //to check each word in the array
-        for(String word: words){
+        for(String thewords: words){
             // if word is present add 1 to that count:
-            if(wordCount.containsKey(word)){
-                wordCount.put(word.toLowerCase(), wordCount.get(word)+1);
+            if(wordCount.containsKey(thewords)){
+                wordCount.put(thewords.toLowerCase(), wordCount.get(thewords)+1);
             }else{//otherwise just add 1
-                wordCount.put(word,1);
+                wordCount.put(thewords,1);
             }
         }
 
+        System.out.println(wordCount);
 
-        //extracting all keys of map - wordCount
-        Set<String>wordsInString = wordCount.keySet(); //keySet will return set
 
-        //loop through all the words in wordCount:
-        for(String word: wordsInString){
-            if(wordCount.get(word) >= 1){
-                System.out.println(word + " : "+ wordCount.get(word));
-            }
-        }
+//        //extracting all keys of map - wordCount
+//        Set<String>wordsInString = wordCount.keySet(); //keySet will return set
+//
+//        //loop through all the words in wordCount:
+//        for(String word: wordsInString){
+//            if(wordCount.get(word) >= 1){
+//                System.out.println(word + " : "+ wordCount.get(word));
+//            }
+//        }
     }
 }
