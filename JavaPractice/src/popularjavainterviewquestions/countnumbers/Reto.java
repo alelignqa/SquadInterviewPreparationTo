@@ -29,7 +29,13 @@ public class Reto {
                 for(String mappy : map.keySet()){
                     System.out.println(mappy + " "+ map.get(mappy));
                 }
-            }
+
+        System.out.println("_______________________");
+
+    for(Map.Entry<String,Integer> mappy : map.entrySet()){
+        System.out.println(mappy.getKey()+ " "+ mappy.getValue());
+    }
+    }
 
 
 
